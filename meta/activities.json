@@ -1,0 +1,363 @@
+{
+  "items": [
+    {
+      "name": "Test 1",
+      "item-code": "Test-1",
+      "item-type": "folder",
+      "sub-type": "test",
+      "items": [
+        {
+          "name": "0002 Q1 Eiffel Tower",
+          "item-code": "Test-1/0002_Q1_Eiffel_Tower",
+          "item-type": "resource",
+          "resource": "RE_0001"
+        },
+        {
+          "name": "0003 Q2 Bank Balance",
+          "item-code": "Test-1/0003_Q2_Bank_Balance",
+          "item-type": "resource",
+          "resource": "RE_0002"
+        },
+        {
+          "name": "0004 Q3 Never Ending Loop",
+          "item-code": "Test-1/0004_Q3_Never_Ending_Loop",
+          "item-type": "resource",
+          "resource": "RE_0003"
+        },
+        {
+          "name": "0005 Q4 Nested For Loops",
+          "item-code": "Test-1/0005_Q4_Nested_For_Loops",
+          "item-type": "resource",
+          "resource": "RE_0004"
+        }
+      ]
+    }
+  ],
+  "resources": {
+  	"RE_0001": {
+      "meta": {
+        "type": "OPEN",
+        "score": {
+          "default": "0",
+          "max": "1",
+          "min": "0"
+        }
+      },
+      "content": {
+        "instructions": [
+          {
+            "tag": "html",
+            "html": "Let’s begin with a simple question. It’s ok if you do not know the answer to this. We will use this quiz to create a course that best fits your learning needs."
+          }
+        ],
+        "stimulus": [
+          {
+            "tag": "image",
+            "image": "images/Q1_Eiffel_Tower.png"
+          }
+        ],
+        "canvas": {
+          "layout": "OE_IMAGE",
+          "textbox": true,
+          "data": {
+            "questiondata": [
+              {
+                "text": "What is the output of the following code?<a href='http://www.comprodls.com/m1.0/interaction/open'>i1</a>"
+              }
+            ]       
+          },
+          "raw": ""
+        },
+        "interactions": {
+          "i1": {
+            "type": "OPEN"
+          }
+        },
+        "hint": {}
+      },
+      "feedback": {
+        "i1": {
+          "fn_contains": [
+            {
+             "keywords": ["I don't know"],
+             "message": "That’s ok. We are trying to create a custom course for you, so it is good for us to know what you know.",
+             "action": "end-current-test" 
+            },
+            {
+             "keywords": ["The height is 300"],
+             "message": "Check line 4. There is a multiplication operation happening there"
+            },
+            {
+             "keywords": ["No output; there is an error in the code."],
+             "message": "Hmm. We tried this code and there was no error in it."
+            },
+            {
+             "keywords": ["The height is 30000"],
+             "message": "That’s correct. With this you have demonstrated that you know how variables, comments and print statements work in Python. This is great for us to know",
+             "action": "end-current-question"             
+            }
+          ],
+          "empty": "You did not enter anything.",
+          "gibberish": "That seems like it is not English. You want to try again?",
+          "default": "We couldn’t quite understand what you said. Try again"
+        }
+      },
+      "responses": {
+        "i1": {}
+      },
+      "learning-objectives": [],
+      "tags": [
+        "test"
+      ]
+    },
+    "RE_0002": {
+      "meta": {
+        "type": "OPEN",
+        "score": {
+          "default": "0",
+          "max": "1",
+          "min": "0"
+        }
+      },
+      "content": {
+        "instructions": [
+          {
+            "tag": ""
+          }
+        ],
+        "stimulus": [
+          {
+            "tag": "image",
+            "image": "images/Q2_Bank_Balance.png"
+          }
+        ],
+        "canvas": {
+          "layout": "OE_IMAGE",
+          "textbox": true,
+          "data": {
+            "questiondata": [
+              {
+                "text": "What is the output of the following code?<a href='http://www.comprodls.com/m1.0/interaction/open'>i1</a>"
+              }
+            ]       
+          },
+          "raw": ""
+        },
+        "interactions": {
+          "i1": {
+            "type": "OPEN"
+          }
+        },
+        "hint": {}
+      },
+      "feedback": {
+        "i1": {
+          "fn_contains": [
+            {
+             "keywords": ["I don't know","no idea","no clue","bug","error"],
+             "message": "That’s ok. We are trying to create a custom course for you, so it is good for us to know what you know."
+            },
+            {
+             "keywords": ["You saved a lot this month"],
+             "message": "Hmm..The account balance was 2000. It seems the program says this when the account balance is >= 3000.",
+             "action": "end-current-test"
+            },
+            {
+             "keywords": ["You could save a little more"],
+             "message": "Perfect. You were able to read the program correctly. Now we know that you know how if statements work.",
+             "action": "end-current-question"
+            },
+            {
+             "keywords": ["Save now or you may regret later"],
+             "message": "Please read the program carefully and try again."
+            }
+          ],
+          "empty": "It seems you haven’t entered an answer. If you do not know the answer, feel free to say so.",
+          "gibberish": "That seems like it is not English. You want to try again?",
+          "default": "We couldn’t quite understand what you said. Try again"
+        }
+      },
+      "responses": {
+        "i1": {}
+      },
+      "learning-objectives": [],
+      "tags": [
+        "test"
+      ]
+    },
+    "RE_0003": {
+      "meta": {
+        "type": "MCSR",
+        "score": {
+          "default": 0,
+          "max": 1,
+          "min": 0
+        }
+      },
+      "content": {
+        "instructions": [
+          {
+            "tag": ""
+          } 
+        ],
+        "stimulus": [
+          {
+            "tag": "image",
+            "image": "images/Q3_Never_Ending_Loop.png"
+          }
+        ],
+        "canvas": {
+          "layout": "MCQ_IMAGE_NEW",
+          "data": {
+            "questiondata": [
+              {
+                "text": "<p>Will this code ever end?</p><a href='http://www.comprodls.com/m1.0/interaction/mcqsc'>i1</a>"
+              }
+            ]
+          },
+          "raw": ""
+        },     
+        "interactions": {
+          "i1": {
+            "type": "MCSR",
+            "MCSR": [
+              {
+                "choiceA": "I don’t know" 
+              },
+              {
+                "choiceB": "No, this code will not stop running, until we force quit the program."
+              },
+              {
+                "choiceC": "Yes, this code will stop after running 1000 times"
+              },
+              {
+                "choiceD": "There is an error in this code"
+              }
+            ]
+          }
+        },
+        "hint": {}
+      },
+      "feedback": {
+        "i1": {
+          "fn_contains": [
+            {
+             "keywords": ["I don’t know"],
+             "message": "That’s ok. We are trying to create a custom course for you, so it is good for us to know what you know",
+             "action": "end-current-test"
+            },
+            {
+             "keywords": ["No, this code will not stop running, until we force quit the program."],
+             "message": "This is correct. Now we know that you know how while loops work.",
+             "action": "end-current-question"
+            },
+            {
+             "keywords": ["Yes, this code will stop after running 1000 times"],
+             "message": "Hmm. Have a look at line 2 again, do you think the code suggests that the program end after the while loop has executed a 1000 times."         
+            },
+            {
+             "keywords": ["There is an error in this code"],
+             "message": "That’s interesting. We were able to run this code without any errors."         
+            }
+          ]      
+        }
+      },
+      "responses": {
+        "i1": {
+          "correct": "choiceB"
+        }
+      },
+      "learning-objectives": [],
+      "tags": [
+        "test"
+      ]
+    },
+    "RE_0004": {
+      "meta": {
+        "type": "OPEN",
+        "score": {
+          "default": "0",
+          "max": "1",
+          "min": "0"
+        }
+      },
+      "content": {
+        "instructions": [
+          {
+            "tag": ""
+          }
+        ],
+        "stimulus": [
+          {
+            "tag": "image",
+            "image": "images/Q4_Nested_For_Loops.png"
+          }
+        ],
+        "canvas": {
+          "layout": "OE_IMAGE",
+          "textbox": true,
+          "data": {
+            "questiondata": [
+              {
+                "text": "How many times will print statement on line 6 run?<a href='http://www.comprodls.com/m1.0/interaction/open'>i1</a>"
+              }
+            ]       
+          },
+          "raw": ""
+        },
+        "interactions": {
+          "i1": {
+            "type": "OPEN"
+          }
+        },
+        "hint": {}
+      },
+      "feedback": {
+        "i1": {
+          "fn_contains": [
+            {
+             "keywords": ["I don't know","no idea","no clue","bug","error"],
+             "message": "That’s ok. We are trying to create a custom course for you, so it is good for us to know what you know."
+            },
+            {
+             "keywords": ["5","3","five","three"],
+             "message": "Hmm.. There are two loops in this code. Outer loop that runs 5 times; and for each time the outer loop runs, the inner loop runs 3 times. So we ask you again, how many times will the print statement run.",
+             "action": "end-current-test"
+            },
+            {
+             "keywords": ["15","fifteen"],
+             "message": "Perfect. You were able to evaluate the program correctly. Now we know that you know how nested for loops work.",
+             "action": "end-current-question"
+            }
+          ],
+          "empty": "It seems you haven’t entered an answer. If you do not know the answer, feel free to say so.",
+          "gibberish": "That seems like it is not English. You want to try again?",
+          "default": "We couldn’t quite understand what you said. Try again"
+        }
+      },
+      "responses": {
+        "i1": {}
+      },
+      "learning-objectives": [],
+      "tags": [
+        "test"
+      ]
+    }
+  },
+  "test": {
+    "learning-objectives": {
+      "Building Production Ready Apps": {
+        "learning-objectives": {
+          "Restful API Development": {
+            "learning-objectives": {}
+          }
+        }
+      }
+    },
+    "tags": {
+      "test": {
+        "tags": {}
+      }
+    }
+  }
+}

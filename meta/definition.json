@@ -1,0 +1,103 @@
+{
+  "definition": {
+    "learning-objectives": {
+      "(Prerequisites) Display knowledge of variables, if statements, loops in any programming language": {
+        "learning-objectives": {}
+      },
+      "Demonstrate how to use programming ideas like functions and classes while building multiple Python projects": {
+        "learning-objectives": {}
+      },
+      "Showcase how to implement data structures like Lists and Dictionaries in Python": {
+        "learning-objectives": {}
+      },
+      "Use Python documentation to debug errors": {
+        "learning-objectives": {}
+      },
+      "Implement built-in Python functions and classes to reuse code": {
+        "learning-objectives": {}
+      }
+    },
+    "tags": {
+      "Reading": {
+        "tags": {}
+      },
+      "Videos": {
+        "tags": {}
+      },
+      "Practice": {
+        "tags": {}
+      },
+      "Test": {
+        "tags": {}
+      }      
+    }
+  },
+  "items":{
+    "default" : [
+      {
+         "name": "Course Introduction",
+        "item-type": "folder",
+        "item-code": "Course_Introduction",
+        "sub-type": "default",
+        "items": [
+          {
+            "name": "V1: Intro To The Course",
+            "item-type": "resource",
+            "resource": "RE_0001",
+            "item-code": "Course_Introduction/V1:_Intro_To_The_Course",
+            "tracking": true
+          },
+          {
+            "name": "Pretest",
+            "item-type": "resource",
+            "resource": "RE_0002",
+            "item-code": "Course_Introduction/Pretest",
+            "tracking": true
+          }
+        ]
+      }
+    ]
+  },
+  "resources": {
+    "generic": {
+      "RE_0001": {
+        "sub-type": "md",
+        "tags": [
+          "Videos"
+        ],
+        "md": {
+          "url": "0001_V1_Intro_To_The_Course.md"
+        },
+        "description": "",
+        "learning-objectives": [
+          "(Prerequisites) Display knowledge of variables, if statements, loops in any programming language"
+        ]
+      },
+      "RE_0002": {
+        "sub-type": "test",
+        "tags": [
+          "Test"
+        ],
+        "test": {
+          "url": "Test-1"
+        },
+        "description": "",
+        "learning-objectives": [
+          "(Prerequisites) Display knowledge of variables, if statements, loops in any programming language"
+        ]
+      }
+    },
+    "test": {},
+    "ebook": {}
+  },
+  "meta": {
+    "schema": 1,
+    "title": "Basics of Programming, Using Python",
+    "code": "pythonprogramming",
+    "author": "Kunal Chawla",
+    "thumbnailsmall": "cover.jpg",
+    "thumbnaillarge": "cover.jpg",
+    "description": "",
+    "producttype": "courseware"    
+  }
+}
