@@ -92,12 +92,12 @@
   },
   "meta": {
     "schema": 1,
-    "title": "Basics of Programming, Using Python",
+    "title": "Ingestion Integration Branch 2",
     "code": "pythonprogramming",
     "author": "Kunal Chawla",
     "thumbnailsmall": "cover.jpg",
     "thumbnaillarge": "cover.jpg",
     "description": "",
-    "producttype": "courseware"    
+    "producttype": "ingestion_integration_2"    
   }
 }
