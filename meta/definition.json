@@ -92,8 +92,8 @@
   },
   "meta": {
     "schema": 1,
-    "title": "Basics of Programming, Using Python",
-    "code": "pythonprogramming",
+    "title": "Sample Python Ingestion Admin Tool",
+    "code": "admin_tool_registeration_scenario",
     "author": "Kunal Chawla",
     "thumbnailsmall": "cover.jpg",
     "thumbnaillarge": "cover.jpg",
