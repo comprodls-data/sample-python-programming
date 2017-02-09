@@ -93,11 +93,11 @@
   "meta": {
     "schema": 1,
     "title": "Ingestion Integration Branch 1",
-    "code": "pythonprogramming",
+    "code": "ingestion_integration_1",
     "author": "Kunal Chawla",
     "thumbnailsmall": "cover.jpg",
     "thumbnaillarge": "cover.jpg",
     "description": "",
-    "producttype": "ingestion_integration_1"    
+    "producttype": "courseware"    
   }
 }
