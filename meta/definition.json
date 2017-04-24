@@ -93,7 +93,7 @@
   "meta": {
     "schema": 1,
     "title": "Sample Python Ingestion",
-    "code": "admin_tool_register_ingest_scenario",
+    "code": "admin_tool_register_ingest_scenario_2",
     "author": "Kunal Chawla",
     "thumbnailsmall": "cover.jpg",
     "thumbnaillarge": "cover.jpg",
