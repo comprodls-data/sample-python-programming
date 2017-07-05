@@ -53,6 +53,13 @@
             "resource": "RE_0002",
             "item-code": "Course_Introduction/Pretest",
             "tracking": true
+          },
+          {
+            "name": "Pretest New",
+            "item-type": "resource",
+            "resource": "RE_0002",
+            "item-code": "Course_Introduction/Pretest_New",
+            "tracking": true
           }
         ]
       }
